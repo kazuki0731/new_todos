@@ -21,6 +21,9 @@
     "http-errors": "^1.8.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.12",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   }
 }
