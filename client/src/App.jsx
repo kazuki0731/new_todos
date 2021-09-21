@@ -3,11 +3,11 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 
 function App() {
-  useEffect(async () => {
-    await axios.get("/todos").then(res => {
-      console.log(res.data);
-    });
-  }, []);
+  // useEffect(async () => {
+  //   await axios.get("/todos").then(res => {
+  //     console.log(res.data);
+  //   });
+  // }, []);
   const { register, handleSubmit, reset } = useForm();
   const submitTodo = (data) => {
     console.log(data);
