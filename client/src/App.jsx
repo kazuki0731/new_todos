@@ -30,6 +30,7 @@ function App() {
           </li>
         </ul>
         <button>削除</button>
+        <p>あ</p>
       </div>
     </div>
   );
