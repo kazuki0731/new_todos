@@ -1,5 +1,5 @@
-const { Pool } = require("pg");
-require("dotenv").config();
+// const { Pool } = require("pg");
+// require("dotenv").config();
 
 
 // const pool = new Pool({
@@ -23,4 +23,4 @@ require("dotenv").config();
 // });
 
 
-module.exports = pool;
+// module.exports = pool;
