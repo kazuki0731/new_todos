@@ -1,7 +1,6 @@
 const { Pool } = require("pg");
 require("dotenv").config();
 
-
 const pool = new Pool({
   database: process.env.ENV_DATABASE,
   user: process.env.ENV_USER,
@@ -13,14 +12,5 @@ const pool = new Pool({
     rejectUnauthorized: false,
   },
 });
-
-// const pool = new Pool({
-//   database: "todo_users",
-//   user: "kawabata",
-//   host: "localhost",
-//   password: "XLwdAX2m",
-//   port: 5432,
-// });
-
 
 module.exports = pool;
