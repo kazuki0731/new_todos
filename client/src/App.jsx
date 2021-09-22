@@ -4,9 +4,15 @@ import axios from "axios";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
+  list: {
+    listStyle: "none",
+  },
+  todosContainer: {
+    backgroundColor: "#bbb",
+  },
   active: {
     textDecoration: "line-through",
-    opacity: 0.6
+    opacity: 0.6,
   },
 });
 
@@ -60,8 +66,8 @@ function App() {
         <input type="text" placeholder="todo" {...register("todo")} />
         <input type="submit" value="送信" />
       </form>
-      <div style={{ backgroundColor: "lightgreen" }}>
-        <ul style={{ listStyle: "none" }}>
+      <div className={classes.todosContainer}>
+        <ul className={classes.list}>
           {todos.map((todo, index) => (
             <li key={index}>
               <input
